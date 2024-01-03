@@ -4,10 +4,8 @@ public class Main {
         int a = 1, b = 2, c = 3;
         int sum = a+b+c;
 
-        a = sum;
-        b = sum;
-        c = sum;
-
+        a = b = c = sum;
+        
         System.out.printf("%d %d %d", a, b, c);
     }
 }
