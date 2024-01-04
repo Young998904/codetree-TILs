@@ -6,11 +6,10 @@ public class Main {
 
         int n = sc.nextInt();
 
+        System.out.println(n*n);
+
         if (n < 5) {
             System.out.println("tiny");
-            return;
         }
-
-        System.out.println(n*n);
     }
 }
