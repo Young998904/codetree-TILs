@@ -12,7 +12,7 @@ public class Main {
         int quotient;
         int remainder;
 
-        while (a >= 1) {
+        while (a > 1) {
             quotient = a / b;
             remainder = a % b;
             arr[remainder]++;
