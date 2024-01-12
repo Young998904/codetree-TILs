@@ -12,7 +12,7 @@ public class Main {
             input = sc.next();
 
             min = Math.min(min, input.length());
-            max = Math.max(min, input.length());
+            max = Math.max(max, input.length());
         }
 
         System.out.print(max - min);
