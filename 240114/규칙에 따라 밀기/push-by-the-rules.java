@@ -14,6 +14,8 @@ public class Main {
             else move++;
         }
 
+        move %= str.length();
+
         if (move == 0) {
             System.out.print(str);
             return;
