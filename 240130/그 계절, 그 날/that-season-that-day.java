@@ -10,6 +10,8 @@ public class Main {
         int m = sc.nextInt();
         int d = sc.nextInt();
 
+        // System.out.println(y + " " + m + " " + d);
+
         if (m == 2) { // 2월 (특수) : 윤년 확인 필요
             if (isLeap(y)) { // 윤년인 경우
                 if (d <= 29) answer = "Winter";
@@ -32,16 +34,22 @@ public class Main {
 
             if (d > maxDay) isPossible = false;
 
+            // System.out.printf("가능 : %d월\n", m);
+
             if(isPossible) {
                 switch (m) {
                     case 3: case 4: case 5:
                         answer = "Spring";
+                        break;
                     case 6: case 7: case 8:
                         answer = "Summer";
+                        break;
                     case 9: case 10: case 11:
                         answer = "Fall";
+                        break;
                     case 12: case 1:
                         answer = "Winter";
+                        break;
                 }
             }
         }
