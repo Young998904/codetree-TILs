@@ -18,9 +18,9 @@ class Predict implements Comparable<Predict>{
 
     @Override
     public int compareTo (Predict other) {
-        if (this.y != other.y) return Integer.parseInt(this.y) - Integer.parseInt(other.y);
+        if (!this.y.equals(other.y)) return Integer.parseInt(this.y) - Integer.parseInt(other.y);
 
-        if (this.m != other.m) return Integer.parseInt(this.m) - Integer.parseInt(other.m);
+        if (!this.m.equals(other.m)) return Integer.parseInt(this.m) - Integer.parseInt(other.m);
 
         return Integer.parseInt(this.d) - Integer.parseInt(other.d);
     }
